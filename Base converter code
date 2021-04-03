@@ -23,7 +23,7 @@ window = sg.Window('Base converter', layout)
 
 while True:
     event, values = window.read()
-    if event == sg.WINDOW_CLOSED or event == 'quit':
+    if event == sg.WINDOW_CLOSED:
         break
     try:
         if values['bincheck'] == False and values['hexcheck'] == False and values['octcheck'] == False:
